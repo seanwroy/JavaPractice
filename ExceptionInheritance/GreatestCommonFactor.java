@@ -1,4 +1,3 @@
-package JavaSemester2;
 import java.util.Scanner;
 
 public class GreatestCommonFactor {
@@ -8,15 +7,15 @@ public class GreatestCommonFactor {
 	// Try-Catch block that uses the BadSumException I created as well as a general exception
 	try {
 		System.out.println("Input two integers: ");
-		String one = input.next();
-		String two = input.next();
+		String one = input.nextLine();
+		String two = input.nextLine();
 		
-		//Practice parsing String inputs as Ints
+		//Parsing String inputs as Ints
 		int number1 = Integer.parseInt(one);
 		int number2 = Integer.parseInt(two);
 	    	
 		System.out.println("The Greatest Common Factor of " + number1 + " and " + number2 + " is " 
-		+ GCD(number1, number2));
+		+ GCF(number1, number2));
 	} catch(BadSumException e) {
 		System.out.println(e);
 	} catch(Exception e) {
@@ -27,16 +26,13 @@ public class GreatestCommonFactor {
 }
 
 //Method for finding the greatest common factor
-public static int GCD(int a, int b) throws BadSumException {
-	int r;
-	if(b == 0) {
-		throw new BadSumException("Must use numbers larger than zero");
-	} else {
-		r = a % b;
-        a = b;
-        b = r;
-        
-        return a;
-	}	
-}
+public static int GCF(int a, int b) throws BadSumException {
+	int factor = Math.max(a, b);
+	   for(int i = factor; i > 0; i--){
+	      if(a % i == 0 && b % i == 0){
+	         return i;
+	      }
+	   }
+	   return -1;
+	}
 }
