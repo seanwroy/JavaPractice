@@ -1,7 +1,9 @@
 public class Rectangle {
+	//Remember to not use primitives as primitives don't work with .equals()
 	private Double length;
 	private Double width;
 	
+	//Tests code with four rectangles 
 	public static void main(String[] args) {
 		Rectangle one = new Rectangle(5, 30);
 		Rectangle two = new Rectangle(40, 14);
@@ -11,6 +13,8 @@ public class Rectangle {
 		System.out.println(one);
 		System.out.println(two);
 		System.out.println(three);
+		
+		//Compares rectangle #4 with rectangle #3
 		System.out.println(four.equals(three));
 	}
 	
@@ -51,7 +55,8 @@ public class Rectangle {
 	public double getLength() {
 		return this.length;
 	}
-
+	
+	//Throws an exception if the length is equal to or less than 0
 	public void setLength(double length) throws ArithmeticException {
 		if(length <= 0) {
 			throw new ArithmeticException("Length must be larger than 0.");
@@ -63,7 +68,8 @@ public class Rectangle {
 	public double getWidth() {
 		return this.width;
 	}
-
+	
+	//Throws an exception if the width is equal to or less than 0
 	public void setWidth(double width) throws ArithmeticException {
 		if(width <= 0) {
 			throw new ArithmeticException("width must be larger than 0.");
