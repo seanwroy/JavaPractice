@@ -41,9 +41,11 @@ public class Rectangle {
 		try {
 			Rectangle otherRectangle = (Rectangle)obj;
 			
-			if (this.width.equals(otherRectangle.getWidth()) || this.width.equals(otherRectangle.getLength())
-					&& this.length.equals(otherRectangle.getLength()) || this.length.equals(otherRectangle.getWidth())) {
-				return true;
+			if (this.width.equals(otherRectangle.getWidth()) || this.width.equals(otherRectangle.getLength())) {
+				if(this.length.equals(otherRectangle.getLength()) || this.length.equals(otherRectangle.getWidth())) { 
+					return true;
+				}
+				return false;
 			} else {
 				return false;
 			}
