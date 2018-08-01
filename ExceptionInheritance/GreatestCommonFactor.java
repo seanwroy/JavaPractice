@@ -4,7 +4,7 @@ public class GreatestCommonFactor {
 	public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
 	
-	// Try-Catch block that uses the BadSumException I created as well as a general exception
+	//Try-Catch block that uses the BadSumException exception and a general exception
 	try {
 		System.out.println("Input two integers: ");
 		String one = input.nextLine();
@@ -13,9 +13,12 @@ public class GreatestCommonFactor {
 		//Parsing String inputs as Ints
 		int number1 = Integer.parseInt(one);
 		int number2 = Integer.parseInt(two);
-	    	
-		System.out.println("The Greatest Common Factor of " + number1 + " and " + number2 + " is " 
-		+ GCF(number1, number2));
+		
+		if (number1 < 0 || number2 < 0) {
+			System.out.println("You cannot use negative numbers!");
+		} else {
+			System.out.println("The Greatest Common Factor of " + number1 + " and " + number2 + " is " + GCF(number1, number2));
+		}
 	} catch(BadSumException e) {
 		System.out.println(e);
 	} catch(Exception e) {
