@@ -1,7 +1,3 @@
-
-package Week11_2;
-
-
 public class Circle {
     private double radius;
     
@@ -32,6 +28,7 @@ public class Circle {
         return 2*Math.PI*radius;
     }
     
+    //Overriding Java default toString() object
     @Override
     public String toString() {
     	return "-----------------------------------\n" + "\nCircle radius is " + getRadius() + "\nCircle area is " + getArea() + 
