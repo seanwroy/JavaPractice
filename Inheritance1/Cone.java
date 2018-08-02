@@ -1,6 +1,3 @@
-
-package Week11_2;
-
 public class Cone extends Cylinder{
     public Cone(){
         super();
@@ -14,6 +11,7 @@ public class Cone extends Cylinder{
         return super.getVolume()/3;
     }
     
+    //Overriding default Java toString() object
     @Override
     public String toString() {
     	return "-----------------------------------\n" + "\nCone volume is " + getVolume() + "\n";
