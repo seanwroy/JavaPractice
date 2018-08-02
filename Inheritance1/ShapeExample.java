@@ -1,6 +1,4 @@
 
-package Week11_2;
-
 
 public class ShapeExample {
 
@@ -8,8 +6,9 @@ public class ShapeExample {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //Try block for catching exceptions
         try{
-        	
+        	//Testing various shapes
         	Circle c = new Circle(5);
         	System.out.println(c.toString());
         
