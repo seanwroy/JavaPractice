@@ -1,6 +1,3 @@
-
-package Week11_2;
-
 public class Cylinder extends Circle{
     private double height;
     
@@ -35,6 +32,7 @@ public class Cylinder extends Circle{
         return 2 * super.getArea() + super.getCircumference() * this.height;
     }
     
+    //Overriding default Java toString() object
     @Override
     public String toString() {
     	return "-----------------------------------\n" + "\nCylinder height is " + getHeight() + "\nCylinder volume is " + getVolume() + 
