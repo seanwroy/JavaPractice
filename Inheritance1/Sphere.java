@@ -1,5 +1,3 @@
-package Week11_2;
-
 public class Sphere extends Circle {	
 	private double height;
 	
@@ -34,6 +32,7 @@ public class Sphere extends Circle {
         return 4/3 * super.getArea() * super.getRadius();
     }
     
+    //Overriding default Java toString() object
     @Override
     public String toString() {
     	return "-----------------------------------\n" + "\nSphere height is " + getHeight() + "\nSphere volume is " + getVolume() + 
