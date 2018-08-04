@@ -1,5 +1,3 @@
-package Week12_2;
-
 //Systems Analyst belongs to three groups (three interfaces)
 public class SystemsAnalyst extends Student implements Coop, ThreeYearProgram, JavaStudent {
 	
