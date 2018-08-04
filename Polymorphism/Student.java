@@ -1,5 +1,3 @@
-package Week12_2;
-
 //Abstract superclass Student
 public abstract class Student {
 	public abstract void sleep();
