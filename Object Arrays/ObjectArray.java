@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ObjectArray {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InputMismatchException, Exception {
         Scanner input = new Scanner(System.in);
         
         //Try block to catch an input mismatch and general exception
