@@ -1,21 +1,21 @@
-
-package Arrays;
-
 public class Student {
     
     private String name;
     private int grade;
     private char letterGrade;
-
+    
+    //Default object constructor
     public Student() {
     }
-
+    
+    //Object constructor
     public Student(String name, int grade, char letterGrade) {
         this.name = name;
         this.grade = grade;
         this.letterGrade = letterGrade;
     }
-
+    
+    //Getters and Setters
     public String getName() {
         return name;
     }
@@ -40,6 +40,7 @@ public class Student {
         this.grade = grade;
     }
 
+    //Custom toString (used in ObjectArray)
     @Override
     public String toString() {
     	return getName() + "'s grade is " + getGrade() + 
