@@ -1,5 +1,3 @@
-package Exercise7;
-
 public class Lotto {
 	private int[] numbers;
 	
