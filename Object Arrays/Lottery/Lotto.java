@@ -29,8 +29,8 @@ public class Lotto {
 					if(array[y] == temp) {
 						break;
 					}
-					flag = false;
-				}	
+				}
+				flag = false;
 			}
 			array[i] = temp;
 		}
