@@ -1,3 +1,5 @@
+package Lottery;
+
 public class Lotto {
 	private int[] numbers;
 	
@@ -16,7 +18,21 @@ public class Lotto {
 		//Array for each line
 		int[] array = new int[6];
 		for(int i = 0; i < array.length; i++) {
-			array[i] = (int)(Math.random() * 49 + 1);	
+			boolean flag = true;
+			int temp = 0;
+			
+			//While flag is true, assigns random Int to array index
+			//but if the number is a repeat, breaks from for-loop
+			while(flag) {
+				temp = (int)(Math.random() * 49 + 1);
+				for(int y = 0; y <= i; y++) {
+					if(array[y] == temp) {
+						break;
+					}
+					flag = false;
+				}	
+			}
+			array[i] = temp;
 		}
 		this.numbers = array;
 	}
@@ -38,6 +54,5 @@ public class Lotto {
         }
         return sb.toString();
     }
-    
 }
 
