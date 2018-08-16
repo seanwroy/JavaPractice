@@ -4,7 +4,7 @@ public class Lotto {
 	private int[] numbers;
 	
 	public Lotto() {
-		
+		setNumbers();
 	}
 	
 	public Lotto(int[] numbers) {
@@ -15,6 +15,7 @@ public class Lotto {
 	//Constructor that will randomly generate 
 	//numbers from 1-49 in the array
 	public void setNumbers(){
+		
 		//Array for each line
 		int[] array = new int[6];
 		for(int i = 0; i < array.length; i++) {
@@ -25,7 +26,7 @@ public class Lotto {
 			//but if the number is a repeat, breaks from for-loop
 			while(flag) {
 				temp = (int)(Math.random() * 49 + 1);
-				for(int y = 0; y <= i; y++) {
+				for(int y = 0; y < i; y++) {
 					if(array[y] == temp) {
 						break;
 					}
