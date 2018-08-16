@@ -4,7 +4,7 @@ public class Lotto {
 	private int[] numbers;
 	
 	public Lotto() {
-		setNumbers();
+		this.setNumbers();
 	}
 	
 	public Lotto(int[] numbers) {
@@ -39,7 +39,7 @@ public class Lotto {
 	}
 	
 	public int[] getNumbers() {
-        return numbers;
+        return this.numbers;
     }
 	
 	
