@@ -24,15 +24,16 @@ public class Lotto {
 			
 			//While flag is true, assigns random Int to array index
 			//but if the number is a repeat, breaks from for-loop
-			while(flag) {
+			while (flag) {
 				temp = (int)(Math.random() * 49 + 1);
-				for(int y = 0; y < i; y++) {
+				for(int y = 0; y <= i; y++) {
 					if(array[y] == temp) {
+						flag = true;
 						break;
+					}else {
+						flag = false;
 					}
 				}
-				flag = false;
-			}
 			array[i] = temp;
 		}
 		this.numbers = array;
