@@ -44,6 +44,8 @@ public class ObjectArray {
 	        for(int i = 0; i < students.length; i++) {
 	        	System.out.println(students[i].toString());
 	        }
+		
+	//Catch exceptions	
         }catch (InputMismatchException e) {
         	System.out.println("Use characters only for names and numbers only "
         			+ "for grades.");
