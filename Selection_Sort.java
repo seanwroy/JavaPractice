@@ -3,6 +3,7 @@ public class Selection_Sort {
   public static void main(String[] arg) {
 
     // Declare and initialize the array
+    // Test values
     int[] list = new int[5];
     list[0] = 15;
     list[1] = 4;
