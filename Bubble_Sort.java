@@ -13,7 +13,7 @@ public class Bubble_Sort {
     displayArrayOrder(list, "Original");
     
     // Bubble Sort Algorithm using a while loop and a for loop
-    // Decending order (largest to smallest number)
+    // Descending order (largest to smallest)
     boolean flag = true; 
 
     while(flag){
