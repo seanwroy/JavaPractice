@@ -14,7 +14,7 @@ public class Selection_Sort {
     displayArrayOrder(list, "Original");
     
     // Selection Sort Algorithm using for loops
-    // Decending order (largest to smallest number)
+    // Descending order (largest to smallest number)
     int curMin, temp;  
     for (int i = list.length-1; i>0; i--){
       curMin = 0; 
