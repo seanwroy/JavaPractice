@@ -13,7 +13,7 @@ public class Selection_Sort {
      
     displayArrayOrder(list, "Original");
     
-    // Selection Sort Algorithm using for loops
+    // Selection Sort Algorithm using for-loops
     // Descending order (largest to smallest number)
     int curMin, temp;  
     for (int i = list.length-1; i>0; i--){
