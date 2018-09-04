@@ -1,7 +1,7 @@
 public class Bubble_Sort {
   public static void main(String[] arg) {
 
-    // Declare and initialize the array
+    // Declaring and initializing an example array
     int[] list = new int[5];
     list[0] = 15;
     list[1] = 4;
